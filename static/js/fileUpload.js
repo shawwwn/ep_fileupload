@@ -6,6 +6,7 @@ $(function(){
      */
     function AjaxUploadNew(btn, conf) {
             if (btn instanceof jQuery) { btn = btn[0]; } // unwrap
+            if (!btn) { return; } // if in admin page
 
             btn.addEventListener("click", (e) => {
                 e.preventDefault();
